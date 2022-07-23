@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1.0, maximum-sacale=1.0, minimum-sacale=1.0">
+	<title>Reposteria</title>
+	<link href="https://www.fonts.com/font/adam-ladd/fromage/extra-light">
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+
+</head>
+<body>
+<style >
+	.caja{
+		background: #F08080;
+		font-family: 'extra-light', cursive;
+		font-size: 18px;
+		width: 80%;
+		margin: 60px;
+	}
+	.formulario .caja-inputs{
+		padding: 50px;
+		background: #FFC0CB;
+		border-radius: 6px 6px 0 0;
+	}
+	.formulario input[type="text"], .formulario input[type="correo"]{
+		display: block;
+		width: 100%;
+		margin-bottom: 50px;
+		padding: 15px 10px;
+		border: none;
+		border-bottom: 5px solid #DB7093;
+		font-family: 'extra-light', cursive;
+		font-size: 18px;
+	}
+	.formulario input[type="text"]:focus, .formulario input[type="correo"]:focus{
+		border-bottom: 5px solid #DB7093;
+	}
+	.formulario input[type="radio"]{
+		display: none;
+	}
+
+	.formulario .sexo{
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		margin-bottom: 20px;
+	}
+	.formulario .sexo .hombre{
+		border-radius: 0 5px 5px 0;
+	}
+.formulario .sexo .mujer{
+		border-radius: 0 5px 5px 0;
+	}
+.formulario .label-radio{
+	background: rgba(32, 178, 170 , .4);
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+	width: 49%;
+	
+}
+.formulario input[type="radio"]:checked + .label-radio{
+	background:#DB7093 ;
+}
+.formulario .terminos{
+	text-align: center;
+	color: #424242;
+}
+.formulario .terminos laabel{
+	margin-left: 10px;
+}
+.formulario .error{
+	display: none;
+	margin-top: 20px;
+	border-radius: 3px;
+	background: #DDA0DD;
+	color: #fff;
+	padding: 15px 10px;
+	padding-left: 40px;
+}
+.formulario .btn{
+	width: 100%;
+	text-align: center;
+	background: #D8BFD8;
+	color: #fff;
+	border: none;
+	display: block;
+	padding: 15px 10px;
+	cursor: pointer;
+	border-radius: 0 0 6px 6px;
+	font-family: 'extra-light', cursive;
+	font-size: 18px;
+}
+.formulario .btn:hover{
+	background: #66CDAA;
+}
+</style>
+
+
+
+	
+		<div class="contenedor">
+			<header>
+				<nav>
+					<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="nosotros.html">Nosotros</a></li>
+					<li><a href="galeria.html">Galeria</a></li>
+					<li><a href="contactos.html">Contactos</a></li>
+					<li><a href="calculadora.html">Calculadora</a></li>
+					<li><a href="registrarse.html">Registrarse</a></li>
+					</ul>
+				</nav>
+			</header>
+			<section class="main">
+				<div class="caja">
+					<form action="" class="formulario" id="formulario" name="formulario">
+						<div class="caja-inputs">
+							<input type="text" name="nombre" placeholder="Nombre">
+							<input type="text" name="correo" placeholder="Correo">
+							<div class="sexo">
+								<input type="radio" name="sexo" id="hombre" value="Hombre">
+								<label class="label-radio" for="hombre">Hombre</label>
+								<input type="radio" name="sexo" id="mujer" value="Mujer">
+								<label class="label-radio" for="mujer">Mujer</label>
+							</div>
+							<div class="terminos">
+								<input type="checkbox" name="terminos" id="terminos">
+								<label for="terminos">Acepto los terminos y condiciones</label>
+							</div>
+							<ul class="error" id="error"></ul>
+							
+						</div>
+						<input type="submit" class="btn" value="Registrarse">
+
+					</form>
+
+				</div>
+				
+
+			</section>
+			<aside>
+				<div class="lateral">
+					<h3 class="titulo"> PROMOCIONES</h3>
+					<ul>
+						<li><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a></li>
+						<li><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a></li>
+						<li><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a></li>
+						<li><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a></li>
+						<li><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a></li>
+						<li><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a></li>
+					</ul>
+				</div>
+				<div class="lateral"> 
+					<h3 class="titulo"> INFORMACION</h3>
+					<p><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</i></p>
+				</div>
+			</aside>
+			<footer>
+				<p>@Zukey Abigail Ramirez Flores -Derechos reservados-</p>
+			</footer>
+		</div>
+ 	<script src="js/acciones2.js"></script>
+	</body>
+</html>
